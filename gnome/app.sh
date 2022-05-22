@@ -39,7 +39,7 @@ sudo dnf install gnome-tweaks gnome-extensions-app -y
 sudo dnf install gimp inkscape blender ardour6 -y
 
 #Programming
-sudo dnf install sublime-text codium gvim godot -y 
+sudo dnf install sublime-text codium gvim godot kitty -y 
 sudo dnf install java java-devel make automake gcc gcc-c++ kernel-devel moby-engine -y
 
 #Nvidia drivers
