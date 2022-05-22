@@ -4,15 +4,9 @@
 echo "fastestmirror=True" >> /etc/dnf/dnf.conf
 echo "max_parallel_downloads=10" >> /etc/dnf/dnf.conf
 
+#using the instalation archives
 source ./gnome/app.sh
 source ./gnome/extensions.sh
-#making the directories for the dotfiles
-mkdir $HOME/.dotfiles
-mkdir $HOME/.dotfiles/dnf
-mkdir $HOME/.dotfiles/fish
-mkdir $HOME/.dotfiles/git
-mkdir $HOME/.dotfiles/kitty
-mkdir $HOME/.dotfiles/Wallpaper
 
 #importing the dotfiles
 #gitconfig
