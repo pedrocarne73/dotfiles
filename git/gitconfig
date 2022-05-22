@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
+[user]
+	email = me@pedrocarne.com
+	name = Pedro
