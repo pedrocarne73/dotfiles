@@ -26,6 +26,11 @@ sudo dnf install dnf-plugins-core
 sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
 sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 
+#Copr repos
+#Waydroid
+sudo dnf copr enable aleasto/waydroid
+sudo dnf update
+
 #Install the programs
 #These are for themes and extensions
 sudo dnf install gnome-tweaks gnome-extensions-app -y
@@ -35,12 +40,15 @@ sudo dnf install gimp inkscape blender ardour6 -y
 
 #Programming
 sudo dnf install sublime-text codium gvim godot -y 
-sudo dnf install java java-devel make automake gcc gcc-c++ kernel-devel -y
+sudo dnf install java java-devel make automake gcc gcc-c++ kernel-devel moby-engine -y
 
 #Nvidia drivers
 sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda -y 
 
 #Daily use and Retroarch
 sudo dnf install fragments thunderbird brave-browser fish -y
-sudo dnf install @multimedia
-flatpak install flathub org.libretro.RetroArch
+sudo dnf install @multimedia -y
+flatpak install flathub org.libretro.RetroArch -y
+sudo dnf install waydroid -y
+sudo waydroid init -c https://ota.waydro.id/system -v https://ota.waydro.id/vendor
+sudo systemctl enable --now waydroid-container
