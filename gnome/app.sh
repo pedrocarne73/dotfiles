@@ -47,7 +47,7 @@ sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda -y
 
 #Daily use and Retroarch
 sudo dnf install fragments thunderbird brave-browser fish -y
-sudo dnf install @multimedia -y
+sudo dnf install @multimedia lsb -y
 flatpak install flathub org.libretro.RetroArch -y
 sudo dnf install waydroid -y
 sudo waydroid init -c https://ota.waydro.id/system -v https://ota.waydro.id/vendor
